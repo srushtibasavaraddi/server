@@ -9,19 +9,24 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 var temp;
+var response;
 app.post("/",(req,res)=>{
         temp=req.body.message;
+        response={
+            "reply":"nettaga enter maad pa"
+        }
         if(temp=="support"){
-            res.json({
-                "reply":"no"
-        })}
+            response={
+                "reply":"nahi"
+            }
+           }
         else{
-            res.json({
-                "reply":"ok "
-        })
+            response={
+                "reply":"nahi"
+            }
     }
 
-    res.end();
+    res.end(JSON.stringify(reponse));
  })
 app.listen(port,()=>{
     console.log(`start`);
