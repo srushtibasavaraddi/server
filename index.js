@@ -20,6 +20,8 @@ app.post("/",(req,res)=>{
                 "reply":"ok "
         })
     }
+
+    res.end();
  })
 app.listen(port,()=>{
     console.log(`start`);
