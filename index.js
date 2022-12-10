@@ -21,7 +21,9 @@ app.post("/",(req,res)=>{
             }
            }
     
-    res.end({"reply": "sdsd"});
+    res.send({"reply":"sdfgdfg"});
+    res.end();
+
  })
 app.listen(port,()=>{
     console.log(`start`);
