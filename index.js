@@ -7,9 +7,6 @@ const port =9000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use("/",(req,res)=>{
-    res.json({message:"hellog"})
-});
 
 app.post("/",(req,res)=>{
     res.json({
