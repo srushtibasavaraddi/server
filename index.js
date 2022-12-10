@@ -21,7 +21,7 @@ app.post("/",(req,res)=>{
             }
            }
     
-    res.send({"reply":"sdfgdfg"});
+    res.write({"reply":"sdfgdfg"});
     res.end();
 
  })
