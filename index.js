@@ -7,6 +7,11 @@ app.use("/",(req,res)=>{
     res.json({message:"hello"})
 });
 
+app.post("/",(req,res)=>{
+    res.json({
+        "reply":"ok"
+    })
+})
 app.listen(port,()=>{
     console.log(`start`);
 })
