@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 var temp;
 var response;
-app.post("/",(req,res)=>{
+app.get("/",(req,res)=>{
         temp=req.body.message;
         response={
             "reply":"nettaga enter maad pa"
