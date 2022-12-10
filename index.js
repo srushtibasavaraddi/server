@@ -17,16 +17,11 @@ app.post("/",(req,res)=>{
         }
         if(temp=="support"){
             response={
-                "reply":"nahi"
+                "reply":"nahi rukh ja"
             }
            }
-        else{
-            response={
-                "reply":"nahi"
-            }
-    }
-
-    res.end(JSON.stringify(response));
+    
+    res.end();
  })
 app.listen(port,()=>{
     console.log(`start`);
