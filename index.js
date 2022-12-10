@@ -8,7 +8,7 @@ const port =9000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.post("/",(req,res)=>{
+app.use("/",(req,res)=>{
     res.json({
         "reply":"ok"
     })
