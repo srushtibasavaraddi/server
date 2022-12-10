@@ -20,9 +20,8 @@ app.post("/",(req,res)=>{
                 "reply":"nahi rukh ja"
             }
            }
-    
-    res.write({"reply":"sdfgdfg"});
-    res.end();
+
+    res.end(JSON.stringify(response));
 
  })
 app.listen(port,()=>{
