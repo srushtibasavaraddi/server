@@ -21,7 +21,7 @@ app.post("/",(req,res)=>{
             }
            }
     
-    res.end();
+    res.end({"reply": "sdsd"});
  })
 app.listen(port,()=>{
     console.log(`start`);
